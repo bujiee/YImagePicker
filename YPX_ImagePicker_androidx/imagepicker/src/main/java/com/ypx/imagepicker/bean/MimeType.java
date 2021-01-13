@@ -45,7 +45,7 @@ public enum MimeType {
             "mp4"
     )),
     QUICKTIME("video/quicktime", arraySetOf(
-            "mov","quicktime"
+            "mov", "quicktime"
     )),
     THREEGPP("video/3gpp", arraySetOf(
             "3gp",
@@ -56,16 +56,20 @@ public enum MimeType {
             "3gpp2"
     )),
     MKV("video/x-matroska", arraySetOf(
-            "mkv","x-matroska"
+            "mkv", "x-matroska"
     )),
     WEBM("video/webm", arraySetOf(
             "webm"
     )),
     TS("video/mp2ts", arraySetOf(
-            "ts","mp2ts"
+            "ts", "mp2ts"
     )),
     AVI("video/avi", arraySetOf(
             "avi"
+    )),
+    /*小米手机等会出现这种格式*/
+    HEIF("image/heif", arraySetOf(
+            "heic"
     ));
 
     private final String mMimeTypeName;
@@ -93,7 +97,7 @@ public enum MimeType {
     }
 
     public static Set<MimeType> ofImage() {
-        return EnumSet.of(JPEG, PNG, GIF, BMP, WEBP);
+        return EnumSet.of(JPEG, PNG, GIF, BMP, WEBP, HEIF);
     }
 
     public static Set<MimeType> ofVideo() {
@@ -130,13 +134,14 @@ public enum MimeType {
         }
         ArrayList<String> mimeList = new ArrayList<>();
         for (MimeType mimeType : mimeTypes) {
-            if (mimeType.mExtensions != null) {
-                for (String s : mimeType.mExtensions) {
-                    if (MimeType.isImage(String.valueOf(mimeType))) {
-                        mimeList.add("image/" + s);
-                    } else if (MimeType.isVideo(String.valueOf(mimeType))) {
-                        mimeList.add("video/" + s);
-                    }
+            if (mimeType.mExtensions == null) {
+                continue;
+            }
+            for (String s : mimeType.mExtensions) {
+                if (MimeType.isImage(String.valueOf(mimeType))) {
+                    mimeList.add("image/" + s);
+                } else if (MimeType.isVideo(String.valueOf(mimeType))) {
+                    mimeList.add("video/" + s);
                 }
             }
         }

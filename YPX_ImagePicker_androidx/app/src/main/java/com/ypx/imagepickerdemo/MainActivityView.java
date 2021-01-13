@@ -72,6 +72,7 @@ public class MainActivityView {
     private CheckBox mCbTS;
     private CheckBox mCbQUICKTIME;
     private CheckBox mCbTHREEGPP;
+    private CheckBox mHEIF;
     private CheckBox mCbShowCamera;
     private CheckBox mCbClosePreview;
     private CheckBox mCbPreviewCanEdit;
@@ -142,6 +143,7 @@ public class MainActivityView {
         mCbTS = activity.findViewById(R.id.cb_TS);
         mCbQUICKTIME = activity.findViewById(R.id.cb_QUICKTIME);
         mCbTHREEGPP = activity.findViewById(R.id.cb_THREEGPP);
+        mHEIF = activity.findViewById(R.id.cb_HEIF);
         mCbShowCamera = activity.findViewById(R.id.cb_showCamera);
         mCbClosePreview = activity.findViewById(R.id.cb_closePreview);
         mCbPreviewCanEdit = activity.findViewById(R.id.cb_previewCanEdit);
@@ -430,6 +432,9 @@ public class MainActivityView {
         }
         if (mCbTHREEGPP.isChecked()) {
             mimeTypes.add(MimeType.THREEGPP);
+        }
+        if (mHEIF.isChecked()) {
+            mimeTypes.add(MimeType.HEIF);
         }
         return mimeTypes;
     }

@@ -174,8 +174,15 @@
                 android:checked="true"
                 android:text="THREEGPP" />
 
+
         </LinearLayout>
 
+        <CheckBox
+            android:id="@+id/cb_HEIF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="cb_HEIF" />
 
         <TextView
             android:layout_width="wrap_content"
