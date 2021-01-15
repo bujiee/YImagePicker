@@ -1,20 +1,19 @@
 package com.ypx.imagepickerdemo;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.ypx.imagepicker.ImagePicker;
-import com.ypx.imagepicker.bean.ImageItem;
-import com.ypx.imagepicker.bean.MimeType;
-import com.ypx.imagepicker.bean.PickerError;
-import com.ypx.imagepicker.bean.selectconfig.CropConfig;
-import com.ypx.imagepicker.builder.MultiPickerBuilder;
-import com.ypx.imagepicker.data.OnImagePickCompleteListener;
-import com.ypx.imagepicker.data.OnImagePickCompleteListener2;
-import com.ypx.imagepicker.presenter.IPickerPresenter;
+import car.wuba.saas.media.imagepicker.ImagePicker;
+import car.wuba.saas.media.imagepicker.bean.ImageItem;
+import car.wuba.saas.media.imagepicker.bean.MimeType;
+import car.wuba.saas.media.imagepicker.bean.PickerError;
+import car.wuba.saas.media.imagepicker.bean.selectconfig.CropConfig;
+import car.wuba.saas.media.imagepicker.builder.MultiPickerBuilder;
+import car.wuba.saas.media.imagepicker.data.OnImagePickCompleteListener;
+import car.wuba.saas.media.imagepicker.data.OnImagePickCompleteListener2;
+import car.wuba.saas.media.imagepicker.presenter.IPickerPresenter;
 import com.ypx.imagepickerdemo.style.RedBookPresenter;
 import com.ypx.imagepickerdemo.style.custom.CustomImgPickerPresenter;
 import com.ypx.imagepickerdemo.style.WeChatPresenter;

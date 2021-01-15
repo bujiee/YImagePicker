@@ -6,9 +6,9 @@ import android.graphics.Color;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.ypx.imagepicker.utils.PStatusBarUtil;
-import com.ypx.imagepicker.views.base.SingleCropControllerView;
-import com.ypx.imagepicker.widget.cropimage.CropImageView;
+import car.wuba.saas.media.imagepicker.utils.PStatusBarUtil;
+import car.wuba.saas.media.imagepicker.views.base.SingleCropControllerView;
+import car.wuba.saas.media.imagepicker.widget.cropimage.CropImageView;
 import com.ypx.imagepickerdemo.R;
 
 public class CustomCropControllerView extends SingleCropControllerView {

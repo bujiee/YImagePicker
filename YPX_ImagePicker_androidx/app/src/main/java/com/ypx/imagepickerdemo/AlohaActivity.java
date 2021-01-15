@@ -18,15 +18,15 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
-import com.ypx.imagepicker.ImagePicker;
-import com.ypx.imagepicker.bean.ImageItem;
-import com.ypx.imagepicker.bean.selectconfig.CropConfig;
-import com.ypx.imagepicker.data.OnImagePickCompleteListener;
-import com.ypx.imagepicker.utils.PBitmapUtils;
-import com.ypx.imagepicker.utils.PCornerUtils;
-import com.ypx.imagepicker.utils.PStatusBarUtil;
-import com.ypx.imagepicker.utils.PViewSizeUtils;
-import com.ypx.imagepicker.widget.cropimage.CropImageView;
+import car.wuba.saas.media.imagepicker.ImagePicker;
+import car.wuba.saas.media.imagepicker.bean.ImageItem;
+import car.wuba.saas.media.imagepicker.bean.selectconfig.CropConfig;
+import car.wuba.saas.media.imagepicker.data.OnImagePickCompleteListener;
+import car.wuba.saas.media.imagepicker.utils.PBitmapUtils;
+import car.wuba.saas.media.imagepicker.utils.PCornerUtils;
+import car.wuba.saas.media.imagepicker.utils.PStatusBarUtil;
+import car.wuba.saas.media.imagepicker.utils.PViewSizeUtils;
+import car.wuba.saas.media.imagepicker.widget.cropimage.CropImageView;
 import com.ypx.imagepickerdemo.style.WeChatPresenter;
 
 import java.util.ArrayList;

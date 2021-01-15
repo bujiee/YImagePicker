@@ -6,11 +6,10 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.ypx.imagepicker.ImagePicker;
-import com.ypx.imagepicker.bean.ImageItem;
-import com.ypx.imagepicker.utils.PStatusBarUtil;
+import car.wuba.saas.media.imagepicker.ImagePicker;
+import car.wuba.saas.media.imagepicker.bean.ImageItem;
+import car.wuba.saas.media.imagepicker.utils.PStatusBarUtil;
 import com.ypx.imagepickerdemo.R;
-import com.ypx.imagepickerdemo.preview.ImagesViewPager;
 
 import java.util.ArrayList;
 

@@ -17,17 +17,17 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ypx.imagepicker.adapter.MultiPreviewAdapter;
-import com.ypx.imagepicker.bean.ImageItem;
-import com.ypx.imagepicker.bean.SelectMode;
-import com.ypx.imagepicker.bean.selectconfig.BaseSelectConfig;
-import com.ypx.imagepicker.bean.selectconfig.MultiSelectConfig;
-import com.ypx.imagepicker.helper.recyclerviewitemhelper.SimpleItemTouchHelperCallback;
-import com.ypx.imagepicker.presenter.IPickerPresenter;
-import com.ypx.imagepicker.utils.PCornerUtils;
-import com.ypx.imagepicker.utils.PStatusBarUtil;
-import com.ypx.imagepicker.views.PickerUiConfig;
-import com.ypx.imagepicker.views.base.PreviewControllerView;
+import car.wuba.saas.media.imagepicker.adapter.MultiPreviewAdapter;
+import car.wuba.saas.media.imagepicker.bean.ImageItem;
+import car.wuba.saas.media.imagepicker.bean.SelectMode;
+import car.wuba.saas.media.imagepicker.bean.selectconfig.BaseSelectConfig;
+import car.wuba.saas.media.imagepicker.bean.selectconfig.MultiSelectConfig;
+import car.wuba.saas.media.imagepicker.helper.recyclerviewitemhelper.SimpleItemTouchHelperCallback;
+import car.wuba.saas.media.imagepicker.presenter.IPickerPresenter;
+import car.wuba.saas.media.imagepicker.utils.PCornerUtils;
+import car.wuba.saas.media.imagepicker.utils.PStatusBarUtil;
+import car.wuba.saas.media.imagepicker.views.PickerUiConfig;
+import car.wuba.saas.media.imagepicker.views.base.PreviewControllerView;
 import com.ypx.imagepickerdemo.R;
 
 import java.util.ArrayList;
@@ -231,7 +231,7 @@ public class CustomPreviewControllerView extends PreviewControllerView {
             mPreviewRecyclerView.scrollToPosition(index);
         } else {
             mTvIndex.setText("");
-            mTvIndex.setBackground(getResources().getDrawable(com.ypx.imagepicker.R.mipmap.picker_icon_unselect));
+            mTvIndex.setBackground(getResources().getDrawable(car.wuba.saas.media.imagepicker.R.mipmap.picker_icon_unselect));
         }
 
         if (selectedList == null || selectedList.size() == 0) {

@@ -21,12 +21,10 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.DecodeFormat;
-import com.bumptech.glide.request.RequestOptions;
-import com.ypx.imagepicker.bean.ImageItem;
-import com.ypx.imagepicker.bean.MimeType;
-import com.ypx.imagepicker.bean.SelectMode;
-import com.ypx.imagepickerdemo.style.WeChatPresenter;
+
+import car.wuba.saas.media.imagepicker.bean.ImageItem;
+import car.wuba.saas.media.imagepicker.bean.MimeType;
+import car.wuba.saas.media.imagepicker.bean.SelectMode;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

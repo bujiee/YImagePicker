@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.ypx.imagepicker.widget.TouchRecyclerView
+    <car.wuba.saas.media.imagepicker.widget.TouchRecyclerView
         android:id="@+id/mRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

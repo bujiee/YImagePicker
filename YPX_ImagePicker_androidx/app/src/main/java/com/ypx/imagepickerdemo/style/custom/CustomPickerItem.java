@@ -5,18 +5,17 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ypx.imagepicker.bean.ImageItem;
-import com.ypx.imagepicker.bean.PickerItemDisableCode;
-import com.ypx.imagepicker.bean.selectconfig.BaseSelectConfig;
-import com.ypx.imagepicker.presenter.IPickerPresenter;
-import com.ypx.imagepicker.utils.PCornerUtils;
-import com.ypx.imagepicker.utils.PViewSizeUtils;
-import com.ypx.imagepicker.views.base.PickerItemView;
+import car.wuba.saas.media.imagepicker.bean.ImageItem;
+import car.wuba.saas.media.imagepicker.bean.PickerItemDisableCode;
+import car.wuba.saas.media.imagepicker.bean.selectconfig.BaseSelectConfig;
+import car.wuba.saas.media.imagepicker.presenter.IPickerPresenter;
+import car.wuba.saas.media.imagepicker.utils.PCornerUtils;
+import car.wuba.saas.media.imagepicker.utils.PViewSizeUtils;
+import car.wuba.saas.media.imagepicker.views.base.PickerItemView;
 import com.ypx.imagepickerdemo.R;
 
 /**
@@ -61,8 +60,8 @@ public class CustomPickerItem extends PickerItemView {
         textView.setGravity(Gravity.CENTER);
         textView.setTextColor(getThemeColor());
 //        @SuppressLint("InflateParams")
-//        View view = LayoutInflater.from(getContext()).inflate(com.ypx.imagepicker.R.layout.picker_item_camera, null);
-//        TextView mTvvCamera = view.findViewById(com.ypx.imagepicker.R.id.tv_camera);
+//        View view = LayoutInflater.from(getContext()).inflate(car.wuba.saas.media.imagepicker.R.layout.picker_item_camera, null);
+//        TextView mTvvCamera = view.findViewById(car.wuba.saas.media.imagepicker.R.id.tv_camera);
 //        mTvvCamera.setText(selectConfig.isOnlyShowVideo() ?
 //                getContext().getString(R.string.picker_str_item_take_video) :
 //                getContext().getString(R.string.picker_str_item_take_photo));
@@ -122,7 +121,7 @@ public class CustomPickerItem extends PickerItemView {
                 mTvIndex.setText(String.format("%d", indexOfSelectedList + 1));
                 mTvIndex.setBackground(PCornerUtils.cornerDrawableAndStroke(getThemeColor(), dp(12), dp(1), Color.WHITE));
             } else {
-                mTvIndex.setBackground(getResources().getDrawable(com.ypx.imagepicker.R.mipmap.picker_icon_unselect));
+                mTvIndex.setBackground(getResources().getDrawable(car.wuba.saas.media.imagepicker.R.mipmap.picker_icon_unselect));
                 mTvIndex.setText("");
             }
         }

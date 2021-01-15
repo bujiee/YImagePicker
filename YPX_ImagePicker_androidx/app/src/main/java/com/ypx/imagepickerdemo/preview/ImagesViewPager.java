@@ -1,6 +1,5 @@
 package com.ypx.imagepickerdemo.preview;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
@@ -15,10 +14,8 @@ import androidx.annotation.Nullable;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.ypx.imagepicker.bean.ImageItem;
-import com.ypx.imagepicker.helper.DetailImageLoadHelper;
-import com.ypx.imagepicker.widget.cropimage.CropImageView;
-import com.ypx.imagepickerdemo.style.RedBookPresenter;
+import car.wuba.saas.media.imagepicker.bean.ImageItem;
+import car.wuba.saas.media.imagepicker.widget.cropimage.CropImageView;
 
 import java.util.ArrayList;
 import java.util.List;
